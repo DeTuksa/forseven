@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  go_router: ^14.8.1
 
 dev_dependencies:
   flutter_test:
@@ -73,10 +74,43 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: AmazonEmber
+      fonts:
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Bold.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Bold-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC.otf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Bold.otf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Bold-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Light.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Light-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Thin.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Thin-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Bold-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Heavy.otf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Heavy-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Light.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Medium.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Medium-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Duospace.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Duospace-Bold.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Heavy.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Heavy-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Light.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Light-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Medium.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Medium-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Mono.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Mono-Bold.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Thin.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Thin-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-V2.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-V2-Bold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
