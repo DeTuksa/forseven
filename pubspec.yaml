@@ -88,7 +88,7 @@ flutter:
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Light-Italic.ttf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Thin.ttf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Thin-Italic.ttf
-        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display.otf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Bold-Italic.ttf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Heavy.otf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Display-Heavy-Italic.ttf
