@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forseven/core/config/routes/app_routes.dart';
 import 'package:forseven/core/constants/app_strings.dart';
 import 'package:forseven/core/themes/theme.dart';
 import 'package:forseven/core/utils/padding_extension.dart';
@@ -98,6 +99,7 @@ class _ChooseMarketScreenState extends State<ChooseMarketScreen> {
                 ),
                 20.ph,
                 FSButton(
+                  onPressed: () => context.pushNamed(AppRoutes.analyticsScreen),
                   child: Padding(
                     padding: const EdgeInsets.all(6.0),
                     child: Row(
@@ -113,7 +115,7 @@ class _ChooseMarketScreenState extends State<ChooseMarketScreen> {
                         ),
                         Icon(
                           Icons.arrow_forward_ios,
-                          size: 18,
+                          size: 14,
                         )
                       ],
                     ),

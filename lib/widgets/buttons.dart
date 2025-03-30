@@ -26,13 +26,13 @@ class FSButton extends StatelessWidget {
 }
 
 class FSOutlinedButton extends StatelessWidget {
-  final String text;
+  final Widget child;
   final bool isLoading;
   final bool isDisabled;
   final VoidCallback? onPressed;
   final ButtonStyle? style;
   final Color? indicatorColor;
-  const FSOutlinedButton({super.key, required this.text,
+  const FSOutlinedButton({super.key, required this.child,
     this.isLoading = false, this.onPressed, this.isDisabled = false, this.style, this.indicatorColor});
 
   @override
@@ -45,7 +45,7 @@ class FSOutlinedButton extends StatelessWidget {
       child: isLoading ? SizedBox(
         height: 20, width: 20,
         child: CircularProgressIndicator(color: indicatorColor??ForsevenTheme.darkBlue,),
-      ) : Text(text, textAlign: TextAlign.center, style: TextStyle(fontFamily: ForsevenTheme.fontFamily),),
+      ) : child,
     );
   }
 }

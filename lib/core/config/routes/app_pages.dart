@@ -1,4 +1,5 @@
 import 'package:forseven/core/config/routes/app_routes.dart';
+import 'package:forseven/features/onboarding/presentation/analytics_screen.dart';
 import 'package:forseven/features/onboarding/presentation/choose_market.dart';
 import 'package:forseven/features/onboarding/presentation/splash_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -18,6 +19,11 @@ class AppPages {
         name: Paths.chooseMarketScreen,
         path: Paths.chooseMarketScreen,
         builder: (context, state) => const ChooseMarketScreen()
+      ),
+      GoRoute(
+        path: Paths.analyticsScreen,
+        name: Paths.analyticsScreen,
+        builder: (context, state) => const AnalyticsScreen()
       )
     ]
   );
