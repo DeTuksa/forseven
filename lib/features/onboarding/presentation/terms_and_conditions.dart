@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forseven/core/config/routes/app_routes.dart';
 import 'package:forseven/core/constants/app_strings.dart';
 import 'package:forseven/core/themes/theme.dart';
 import 'package:forseven/core/utils/padding_extension.dart';
@@ -120,6 +121,7 @@ class _TermsAndConditionsScreenState extends State<TermsAndConditionsScreen> {
             Column(
               children: [
                 FSButton(
+                  onPressed: () => context.pushNamed(AppRoutes.landingScreen),
                   isDisabled: (terms == true && privacy == true) ? false : true,
                   style: ElevatedButton.styleFrom(
                       backgroundColor: ForsevenTheme.darkBlue

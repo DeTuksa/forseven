@@ -1,4 +1,5 @@
 import 'package:forseven/core/config/routes/app_routes.dart';
+import 'package:forseven/features/landing_section/presentation/landing_screen.dart';
 import 'package:forseven/features/onboarding/presentation/analytics_screen.dart';
 import 'package:forseven/features/onboarding/presentation/choose_market.dart';
 import 'package:forseven/features/onboarding/presentation/splash_screen.dart';
@@ -30,6 +31,11 @@ class AppPages {
         path: Paths.termsAndConditionsScreen,
         name: Paths.termsAndConditionsScreen,
         builder: (context, state) => const TermsAndConditionsScreen()
+      ),
+      GoRoute(
+        path: Paths.landingScreen,
+        name: Paths.landingScreen,
+        builder: (context, state) => const LandingScreen()
       )
     ]
   );
