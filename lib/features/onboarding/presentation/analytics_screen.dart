@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:forseven/core/config/routes/app_routes.dart';
 import 'package:forseven/core/constants/app_strings.dart';
 import 'package:forseven/core/themes/theme.dart';
-import 'package:forseven/core/utils/context_extensions.dart';
 import 'package:forseven/core/utils/padding_extension.dart';
 import 'package:forseven/widgets/buttons.dart';
+import 'package:go_router/go_router.dart';
 
 class AnalyticsScreen extends StatefulWidget {
   const AnalyticsScreen({super.key});
@@ -80,6 +81,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
             Column(
               children: [
                 FSButton(
+                  onPressed: () => context.pushNamed(AppRoutes.termsAndConditionsScreen),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: ForsevenTheme.darkBlue
                   ),
@@ -107,6 +109,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 ),
                 20.ph,
                 FSOutlinedButton(
+                  onPressed: () => context.pushNamed(AppRoutes.termsAndConditionsScreen),
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(color: ForsevenTheme.darkBlue)
                   ),

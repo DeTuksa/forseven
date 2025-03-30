@@ -2,6 +2,7 @@ import 'package:forseven/core/config/routes/app_routes.dart';
 import 'package:forseven/features/onboarding/presentation/analytics_screen.dart';
 import 'package:forseven/features/onboarding/presentation/choose_market.dart';
 import 'package:forseven/features/onboarding/presentation/splash_screen.dart';
+import 'package:forseven/features/onboarding/presentation/terms_and_conditions.dart';
 import 'package:go_router/go_router.dart';
 
 class AppPages {
@@ -24,6 +25,11 @@ class AppPages {
         path: Paths.analyticsScreen,
         name: Paths.analyticsScreen,
         builder: (context, state) => const AnalyticsScreen()
+      ),
+      GoRoute(
+        path: Paths.termsAndConditionsScreen,
+        name: Paths.termsAndConditionsScreen,
+        builder: (context, state) => const TermsAndConditionsScreen()
       )
     ]
   );
