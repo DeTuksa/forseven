@@ -41,6 +41,40 @@ class ForsevenTheme {
       bodyLarge: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: darkTextColor),
       bodyMedium: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: darkTextColor),
       bodySmall: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: darkTextColor),
-    )
+    ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          elevation: 0,
+          minimumSize: const Size(double.maxFinite, 48),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(200)),
+          foregroundColor: Colors.white,
+          backgroundColor: darkBlue,
+          disabledBackgroundColor: grey,
+          disabledForegroundColor: Colors.white,
+          textStyle: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          elevation: 0,
+          minimumSize: const Size(double.maxFinite, 48),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(200),
+              side: BorderSide(color: darkBlue)
+          ),
+          foregroundColor: darkBlue,
+          disabledForegroundColor: grey,
+          textStyle: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500),
+        ),
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          elevation: 0,
+          minimumSize: const Size(double.maxFinite, 48),
+          foregroundColor: darkBlue,
+          disabledForegroundColor: grey,
+          textStyle: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500),
+        ),
+      )
   );
 }
