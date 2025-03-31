@@ -22,9 +22,10 @@ class ForsevenTheme {
       error: Colors.red,
       onError: Colors.white,
       secondary: darkBlue,
-      onSecondary: lightTextColor
+      onSecondary: lightTextColor,
     ),
     brightness: Brightness.light,
+    scaffoldBackgroundColor: primary,
     textTheme: TextTheme(
       displayLarge: TextStyle(fontSize: 57.0, fontWeight: FontWeight.w400, color: darkTextColor),
       displayMedium: TextStyle(fontSize: 45.0, fontWeight: FontWeight.w400, color: darkTextColor),
