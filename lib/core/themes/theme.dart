@@ -11,7 +11,7 @@ class ForsevenTheme {
   static String fontFamily = "AmazonEmber";
 
   static ThemeData lightTheme = ThemeData(
-    fontFamily: fontFamily,
+    // fontFamily: fontFamily,
     useMaterial3: false,
     colorScheme: ColorScheme(
       brightness: Brightness.light,

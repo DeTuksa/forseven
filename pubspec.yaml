@@ -82,9 +82,9 @@ flutter:
   fonts:
     - family: AmazonEmber
       fonts:
-        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember.ttf
-        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Bold.ttf
-        - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Bold-Italic.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/AmazonEmber-Regular.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/AmazonEmber-Bold.ttf
+        - asset: assets/fonts/amazon-ember-cufonfonts/AmazonEmber-Bold-Italic.ttf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC.otf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Bold.otf
         - asset: assets/fonts/amazon-ember-cufonfonts/Amazon-Ember-Cd-RC-Bold-Italic.ttf

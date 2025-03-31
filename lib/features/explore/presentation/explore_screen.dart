@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:forseven/core/constants/image_paths.dart';
 import 'package:forseven/core/utils/padding_extension.dart';
+import 'package:forseven/features/explore/data/models/story_model.dart';
 import 'package:forseven/features/explore/presentation/widgets/carousel_widget.dart';
+import 'package:forseven/features/explore/presentation/widgets/story_card.dart';
 
 class ExploreScreen extends StatefulWidget {
   const ExploreScreen({super.key});
@@ -16,6 +18,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
     ImagePaths.video1,
     ImagePaths.video2,
     ImagePaths.video3,
+  ];
+
+  List<Story> stories = [
+    Story(title: "The definition of British elegance", image: ImagePaths.story1),
+    Story(title: "Sophistication with purpose", image: ImagePaths.story2),
+    Story(title: "Timeless in every detail", image: ImagePaths.story3),
   ];
 
   @override
@@ -39,7 +47,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 separatorBuilder: (context, index) => 4.pw,
                 physics: const BouncingScrollPhysics(),
               ),
-            )
+            ),
+            32.ph,
+            ...stories.map((story) => StoryCard(story: story))
           ],
         ),
       ),
